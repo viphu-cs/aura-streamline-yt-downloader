@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![GUI](https://img.shields.io/badge/GUI-CustomTkinter-8A2BE2?style=for-the-badge)
 ![OS](https://img.shields.io/badge/OS-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+
 
 <p align="center">
   A premium, high-speed Windows desktop YouTube downloader featuring a stunning, immersive <b>fluid glassmorphic UI</b> (Frutiger Aero / Glassmorphism inspired). Aura Streamline delivers out-of-the-box high-resolution video combining and audio conversion without requiring command-line or terminal interaction.
