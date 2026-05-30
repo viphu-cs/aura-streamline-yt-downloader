@@ -1,79 +1,96 @@
 # 💧 Aura Streamline YT Downloader
 
-แอปพลิเคชัน Desktop GUI สำหรับดาวน์โหลดวิดีโอจาก YouTube สุดพรีเมียม พัฒนาขึ้นภายใต้ดีไซน์การออกแบบล้ำสมัยแนวคริสตัลหยดน้ำแก้วใส (Frutiger Aero / Glassmorphism) ด้วยภาษา Python และ CustomTkinter เน้นการประมวลผลความเร็วสูง ความปลอดภัย และความง่ายระดับมืออาชีพโดยไม่ต้องแตะหน้าจอสีดำคอมมานด์ไลน์ (Terminal) อีกต่อไป!
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![GUI](https://img.shields.io/badge/GUI-CustomTkinter-8A2BE2?style=for-the-badge)
+![OS](https://img.shields.io/badge/OS-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+
+<p align="center">
+  A premium, high-speed Windows desktop YouTube downloader featuring a stunning, immersive <b>fluid glassmorphic UI</b> (Frutiger Aero / Glassmorphism inspired). Aura Streamline delivers out-of-the-box high-resolution video combining and audio conversion without requiring command-line or terminal interaction.
+</p>
+
+### 📸 Beautiful Obsidian Dark Mode Interface
+</div>
+
+![Aura Streamline Dark Mode](screenshot.png)
 
 ---
 
-## ✨ ฟีเจอร์เด่นระดับพรีเมียม (Key Features)
+## ✨ Premium Features & Design Philosophy
 
-* **📥 ดาวน์โหลดวิดีโอเดี่ยว (Single Download):** วางลิงก์ YouTube ดึงข้อมูลภาพปก Thumbnail, ชื่อคลิป, ช่องผู้สร้าง, และระดับความยาวคลิปมาทำการวิเคราะห์ เพื่อให้คุณเลือกความละเอียดที่สอดคล้องอย่างสมบูรณ์แบบ (ตั้งแต่ 360p ไปจนถึงความละเอียดสูงอย่าง 1080p Full HD, 2K และ 4K)
-* **📋 ดาวน์โหลดเพลย์ลิสต์ (Playlist Download):** วิเคราะห์และดึงรายการวิดีโอทั้งหมดใน Playlist มาแสดงผลให้เลือกติ๊กเครื่องถูกเฉพาะบางคลิป หรือสั่งดาวน์โหลดคิวรวมทั้งหมดผ่านคลิกเดียว
-* **🎵 ดาวน์โหลดเฉพาะเสียงเป็น MP3:** แยกแทร็กเสียงและแปลงไฟล์เป็นรูปแบบ MP3 คุณภาพสูง 192kbps อัตโนมัติด้วยคลิกเดียว
-* **⏳ คิวดาวน์โหลดแบบ Multi-threading:** จัดลำดับดาวน์โหลดอย่างต่อเนื่องโดยไม่สร้างภาระแบนด์วิธ และป้องกันหน้าต่าง UI ค้างหรือกระตุก (UI Responsive 100%)
-* **🎨 🌓 ระบบ 2 ธีมสลับไดนามิก (Fully Dual-Theme responsive):** ตอบสนองต่อการสลับโหมดหน้าจออัตโนมัติหรือตั้งค่าเลือกเอง ระหว่าง **ธีมสว่างกระจกคริสตัล (Bright Mode)** และ **ธีมมืดออบซิเดียนหรูหรา (Dark Obsidian Mode)**
-* **🖱️ เมนูคลิกขวาที่ปรับสีตามธีม (Theme-Aware Context Menu):** ระบบคลิกขวาสั่งวาง (Right-Click Context Menu) ที่จะตรวจสอบและปรับสีขอบ/สีพื้นหลังตนเองให้กลมกลืนกับธีมของแอปในวินาทีนั้นโดยอัตโนมัติ
-* **📦 ตัวติดตั้งสำเร็จรูประดับมืออาชีพ (Windows Setup Wizard):** ตัวติดตั้ง Setup.exe ภาษาไทยเต็มรูปแบบ ที่ย้ายตัวโปรแกรมและเครื่องมือรวมไฟล์ FFmpeg แบบ Built-in ในตัวเข้าเครื่องคอมพิวเตอร์ของคุณอย่างปลอดภัย พร้อมขึ้นทางลัดสวยงามบน Desktop และ Start Menu ทันที
-
----
-
-## 🚀 วิธีการติดตั้งใช้งาน (Choose Your Path)
-
-### 🎒 วิธีที่ 1: ติดตั้งผ่านตัวรันมาตรฐานสากล (แนะนำสำหรับผู้ใช้ทั่วไป - Easiest Setup)
-คุณสามารถติดตั้งแอปพลิเคชันนี้ลงระบบได้โดยไม่ต้องมีโปรแกรม Python ในเครื่องคอมพิวเตอร์ของคุณเลยครับ!
-
-1. เปิดเข้าไปที่โฟลเดอร์ **`dist/`** ในโปรเจกต์
-2. ดับเบิ้ลคลิกไฟล์ตัวติดตั้ง **`AuraStreamline_Setup.exe`** (ขนาดไฟล์บีบอัดระดับสูงเพียง ~111 MB)
-3. ปฏิบัติตามหน้าต่างติดตั้งภาษาไทยสไตล์สากล (มีระบบเลือกสร้างไอคอนบน Desktop)
-4. เมื่อติดตั้งเสร็จสิ้น ตัวแอปจะเปิดรันผ่านไอคอนสวยหรูทันที พร้อมตัวรวมไฟล์สูงระดับ **FFmpeg** สีเขียวพร้อมดาวน์โหลด 1080p+ ตั้งแต่เปิดโปรแกรมครั้งแรก!
-5. *รองรับการถอนโปรแกรม (Uninstall) ออกจากระบบอย่างปลอดภัยผ่านเมนู Windows Settings (Add or Remove Programs) ได้เสมือนโปรแกรมทั่วไป*
+* **🌀 Immersive Glassmorphic UI:** A beautifully tactile and modern interface built using curated harmonious color palettes, rounded card surfaces, subtle hover micro-animations, and fluid design layouts.
+* **🌓 Seamless Dual-Theme Engine:** Fully responsive real-time theme transitions between a bright, clean crystal theme (**Light Mode**) and a premium deep obsidian theme (**Dark Obsidian Mode**).
+* **🖱️ Theme-Aware Right-Click Menu:** Custom right-click entry menus that dynamically detect the window's current appearance mode and re-color themselves instantly for an integrated visual experience.
+* **📥 Single Video Engine:** Paste any YouTube video URL to automatically fetch rich metadata (cover artwork, channel info, title, and exact duration) and select custom resolutions (from 360p up to 4K Ultra HD).
+* **📋 Playlist Batch Downloader:** Fetch entire playlists, select specific videos using interactive checkbox cards, and queue them for batch downloading with a single click.
+* **🎵 High-Fidelity Audio Extractor:** Seamlessly strip audio streams and automatically convert them into crisp 192kbps MP3 format.
+* **⏳ Concurrent Queue Manager:** A robust background multi-threaded manager that handles downloads in an orderly queue while keeping the main GUI completely responsive (0% lag).
+* **⚙️ Built-In Portable FFmpeg:** Bundled natively in the installer package to merge separate HD video/audio streams and convert audio on the fly—zero external setup or PATH configuration required!
+* **📜 Download History Database:** Tracks successful downloads locally in a secure SQLite database, allowing you to open containing folders or manage history entries directly from the UI.
 
 ---
 
-### 💻 วิธีที่ 2: ติดตั้งผ่านระบบนักพัฒนาโค้ด (For Developers - Python Environment)
-หากคุณต้องการพัฒนาโปรแกรมต่อหรือรันผ่านซอร์สโค้ด ให้ทำตามนี้ใน PowerShell หรือ Command Prompt:
+## 🚀 Installation & Launch Options
 
-1. เปิด Terminal เข้ามาในโฟลเดอร์โปรเจกต์ `yt-download/`
-2. สร้างสภาพแวดล้อมจำลอง (Virtual Environment):
+### 📦 Option A: Professional Windows Setup Wizard (Recommended for Users)
+Install the application cleanly without requiring Python, terminal commands, or administrator access.
+
+1. Navigate to the **`dist/`** directory in this repository.
+2. Double-click the professional installer: **`AuraStreamline_Setup.exe`** (Highly compressed using solid LZMA from 440 MB down to **~111 MB**).
+3. Follow the clean, localized setup wizard (supports creating desktop shortcuts).
+4. Launch the application immediately upon completion.
+5. *Uninstallation is fully supported natively through the Windows Settings page (Apps > Installed Apps > Search "Aura Streamline" > Uninstall).*
+
+---
+
+### 💻 Option B: Developer Environment Setup (For Developers)
+If you want to run, modify, or audit the source code directly on your machine:
+
+1. Clone or download this project, and open a terminal inside the `yt-download/` directory.
+2. Create a clean virtual environment to prevent package version conflicts:
    ```powershell
    python -m venv .venv
    ```
-3. เปิดรันเพื่อติดตั้งไลบรารีทั้งหมดในไฟล์ requirements.txt:
+3. Install the required dependencies:
    ```powershell
    .venv\Scripts\pip.exe install -r requirements.txt
    ```
-4. รันโปรแกรมหลักเพื่อทดสอบ:
+4. Run the main application:
    ```powershell
    .venv\Scripts\python.exe main.py
    ```
-5. *(ตัวแอปจะตรวจหา FFmpeg เสมอ หากไม่พบ คุณสามารถกดปุ่ม "ติดตั้ง FFmpeg อัตโนมัติ" ในหน้าจอซ้ายล่างได้ด้วยการคลิกเพียงครั้งเดียว)*
+5. *(The app will automatically check for FFmpeg. If not present in the environment, you can install the portable engine in one click via the bottom-left sidebar button)*.
 
 ---
 
-## 📁 โครงสร้างโฟลเดอร์ระบบ (Project Structure)
+## 📁 Repository Structure
 
 ```text
 yt-download/
 │
-├── bin/                    # โฟลเดอร์เก็บโปรแกรมถอดรหัสพกพา FFmpeg (ffmpeg.exe, ffprobe.exe)
-├── data/                   # โฟลเดอร์เก็บระบบฐานข้อมูลประวัติ SQLite (.db)
-├── dist/                   # โฟลเดอร์ผลผลิตคอมไพล์สำเร็จ
-│   ├── main/               # แอปพลิเคชันแยกไฟล์รันนิ่ง (Executable folder)
-│   └── AuraStreamline_Setup.exe  # ตัวติดตั้งโปรแกรมเดี่ยวระดับมืออาชีพ (Inno Setup Installer)
+├── bin/                    # Portable FFmpeg binaries (ffmpeg.exe, ffprobe.exe)
+├── data/                   # Local history metadata stored in SQLite (.db) format
+├── dist/                   # Production distribution folder
+│   ├── main/               # Unpackaged compiled application distribution
+│   └── AuraStreamline_Setup.exe  # Standalone Windows Setup Installer wizard
 │
-├── downloader.py           # เอนจิ้นควบคุมหลักของการวิเคราะห์และการเชื่อมโยงการดาวน์โหลด (yt-dlp)
-├── history_db.py           # โมดูลควบคุมฐานข้อมูลประวัติการดาวน์โหลดสำเร็จ SQLite
-├── queue_manager.py        # โมดูล Multi-threading ควบคุมคิวดาวน์โหลดหลังบ้าน
-├── main.py                 # โมดูล GUI ส่วนประกอบหน้าต่างและการเรนเดอร์ธีมพรีเมียม
+├── downloader.py           # Core download controller & metadata parser (yt-dlp wrapper)
+├── history_db.py           # SQLite manager for download history
+├── queue_manager.py        # Multi-threaded download queue controller
+├── main.py                 # Core GUI layout & dynamic responsive layout styling
 │
-├── logo.png / logo.ico     # ไฟล์โลโก้รูปหยดน้ำแบรนด์ดั้งเดิมที่ใช้ฝังใน UI และ Shortcut
-├── setup.iss               # ไฟล์สคริปต์สเปกสำหรับประกอบคอมไพเลอร์ตัวติดตั้ง Inno Setup
-├── requirements.txt        # รายการไลบรารีภาษา Python ที่ใช้ประมวลผล
-└── README.md               # คู่มือการทำงานและการดูแลระบบฉบับนี้
+├── logo.png / logo.ico     # Brand identity water droplet assets
+├── setup.iss               # Inno Setup installer specification script
+├── requirements.txt        # Python package dependencies list
+└── README.md               # This documentation file
 ```
 
 ---
 
-## 🔒 ปลอดภัยและเป็นส่วนตัว 100% (Security & Localized Data)
+## 🔒 Security, Privacy & Architecture
 
-* **ความปลอดภัยของสิทธิ์**: ตัวติดตั้งทำงานในระดับสิทธิ์ผู้ใช้ปกติ (`lowest privilege`) ทำให้สามารถคัดลอกไฟล์แอปพลิเคชันได้โดยไม่เรียกใช้สิทธิ์ Administrator หรือ UAC ของระบบปฏิบัติการ ป้องกันการเข้าถึงรีจิสทรีระบบที่สำคัญ
-* **การปกป้องความเป็นส่วนตัว**: แอปพลิเคชันทำงานอยู่บนคอมพิวเตอร์ของคุณแบบ **100% Local Application** ประวัติการดาวน์โหลดบันทึกภายในเครื่อง และไม่มีการส่งข้อมูลความปลอดภัย คุกกี้ หรือลิงก์อินเทอร์เน็ตใดๆ ของคุณออกนอกระบบ
+* **Lowest-Privilege Installation:** The setup installer is designed with `PrivilegesRequired=lowest`. It installs cleanly inside the user's Local AppData directory (`%LOCALAPPDATA%\Programs`), bypasses UAC elevation warnings, and prevents modifying sensitive system-wide directories.
+* **100% Local Processing:** Your search queries, downloaded video logs, history logs, and database files are processed locally. No user analytics, cookies, or video URLs are transmitted to external telemetry servers.
+* **Clean Code Architecture:** Completely modular codebase divided cleanly between the UI presentation layer (`main.py`) and the background engines, ensuring audits and improvements are straightforward.
